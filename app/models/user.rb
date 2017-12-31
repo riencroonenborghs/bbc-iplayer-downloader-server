@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   devise :database_authenticatable, :rememberable, :trackable, :validatable
   include DeviseTokenAuth::Concerns::User
 

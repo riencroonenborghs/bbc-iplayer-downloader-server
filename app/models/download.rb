@@ -1,4 +1,4 @@
-class Download < ActiveRecord::Base
+class Download < ApplicationRecord
   STATUS_INITIAL    = "initial"
   STATUS_QUEUED     = "queued"
   STATUS_STARTED    = "started"
