@@ -91,7 +91,7 @@ private
   def command
     cmd = ["get_iplayer"]
     cmd << "--proxy #{ENV['PROXY']}" if ENV['PROXY']
-    cmd << "--url \"#{url}\" --force --modes best"
+    cmd << "--url \"#{url}\" --force --modes=best --verbose"
     if ENV['OUTPUT_PATH']
       prep_output_path
       cmd << "--output \"#{ENV['OUTPUT_PATH']}\"" 
